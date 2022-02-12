@@ -43,7 +43,7 @@ namespace MRAOcombine
                 for(int y = 0; y < M.Height; y++)
                 {
                     // Use R channels to set RGB channels on the output texture
-                    Out.SetPixel(x, y, Color.FromArgb(M.GetPixel(x,y).R, R.GetPixel(x, y).R, AO.GetPixel(x, y).R, 255));
+                    Out.SetPixel(x, y, Color.FromArgb(255,M.GetPixel(x,y).R, R.GetPixel(x, y).R, AO.GetPixel(x, y).R));
                 }
             }
 
